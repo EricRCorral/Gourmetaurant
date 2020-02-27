@@ -96,8 +96,8 @@
 
     <div class="background-skew pb-5">
         <div class="container" id="menu">
-            <h1 class="text-center text-menu py-5">Menu</h1>
-            <div class="row">
+            <h1 class="text-center text-menu py-5" data-aos="fade-up">Menu</h1>
+            <div class="row" data-aos="flip-up">
                 <div class="col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-lg-6 text-center hover-overlay"><img src="assets/images/falafel.jpg" class="img-menu rounded-circle">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row py-lg-4">
+            <div class="row py-lg-4" data-aos="flip-down">
                 <div class="col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-lg-6 text-center order-lg-1 order-2 py-4 py-lg-0">
@@ -162,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="flip-up">
                 <div class="col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-lg-6 text-center hover-overlay"><img src="assets/images/shakshuka.jpg" class="img-menu rounded-circle">
@@ -202,14 +202,14 @@
     <div class="background-skew-2 pb-3 pb-md-0">
         <div class="container" id="about">
             <div class="row align-items-baseline">
-                <div class="col-md-6 text-center text-md-left">
+                <div class="col-md-6 text-center text-md-left" data-aos="fade-right">
                     <h1 class="pt-4 pt-lg-0 pb-2">About us</h1>
                     <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt dignissimos nulla, nihil est sed delectus modi illo at libero dolorem ut voluptas ratione voluptatem in rem velit inventore obcaecati veniam vel, harum optio molestias
                         magnam animi. Ipsam, ea aspernatur.</p>
                     <p class="pb-xl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quam non sit neque quae, ex tenetur ratione incidunt ut distinctio mollitia maxime alias praesentium. Cum?</p>
                     <p class="pb-lg-3 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas iure, temporibus ab eligendi non ullam quaerat commodi maiores est.</p>
                 </div>
-                <div class="col-md-6 py-md-5 pl-md-4 text-center">
+                <div class="col-md-6 py-md-5 pl-md-4 text-center" data-aos="fade-left">
                     <h1 class="pb-3 pb-md-0">Our team</h1>
                     <img src="assets/images/background-home-3.jpg" class="about-images about-images-1 pb-2 pb-md-0"><img src="assets/images/person-1.jpg" class="about-images about-images-2 pb-2 pb-md-0">
                     <img src="assets/images/person-2.jpg" class="about-images about-images-3 pb-2 pb-md-0"><img src="assets/images/person-3.jpg" class="about-images about-images-4">
@@ -221,8 +221,8 @@
     <!-- News -->
     <div class="background-skew">
         <div class="container" id="news">
-            <h1 class="margin-news pt-5 pb-3 text-center">News</h1>
-            <div class="card-deck pb-5">
+            <h1 class="margin-news pt-5 pb-3 text-center" data-aos="zoom-in">News</h1>
+            <div class="card-deck pb-5" data-aos="zoom-out">
                 <div class="card hover-news">
                     <a href="#" class="text-reset text-decoration-none"><img src="assets/images/news-1.jpg" class="card-img-top ">
                         <div class="card-body">
@@ -255,8 +255,8 @@
 
     <div class="background-skew-3 pb-4">
         <div class="container" id="contact">
-            <h1 class="margin-news pt-lg-5 pb-3 text-center">Contact us</h1>
-            <div class="row">
+            <h1 class="margin-news pt-lg-5 pb-3 text-center" data-aos="fade-down" data-aos-duration="1000">Contact us</h1>
+            <div class="row" data-aos="fade-down" data-aos-duration="1000">
                 <div class="col-md-7">
                     <form>
                         <div class="row">
@@ -321,7 +321,9 @@
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="libs/aos/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            disable: 'mobile'
+        });
     </script>
 
 </body>
